@@ -1,0 +1,46 @@
+Passengers Recap:
+Person A is on floor 5 and wants to go to floor 15 (going up).
+Person B is on floor 12 and wants to go to floor 8 (going down).
+Person C is on floor 6 and wants to go to floor 20 (going up).
+Person D is on floor 3 and wants to go to floor 17 (going up).
+
+Approach (Corrected):
+
+First, we start at floor 1 and pick up passengers going up (the elevator is traveling upwards).
+Next, we drop off the passengers going up at their respective destinations.
+Finally, after dropping off all passengers going up, we pick up passengers going down
+(in this case, only Person B) and take them to their destination.
+
+Sequence of Steps:
+Pick up Person D at floor 3 (going up to floor 17).
+Pick up Person A at floor 5 (going up to floor 15).
+Pick up Person C at floor 6 (going up to floor 20).
+Drop off Person A at floor 15.
+Drop off Person D at floor 17.
+Drop off Person C at floor 20.
+Pick up Person B at floor 12 (going down to floor 8).
+Drop off Person B at floor 8.
+
+Reasoning:
+We pick up all passengers who are going up before starting the downward journey. This ensures that the elevator completes its upwards
+journey without reversing direction.
+Once the upward journey is completed (at floor 20), we begin picking up and dropping off passengers going down.
+This ensures that the elevator is only traveling in one direction at a time until all passengers traveling in that direction are taken care of.
+
+Total Travel Distance:
+
+Start at floor 1.
+Travel from floor 1 to floor 3 (pick up Person D): 3 floors.
+Travel from floor 3 to floor 5 (pick up Person A): 2 floors.
+Travel from floor 5 to floor 6 (pick up Person C): 1 floor.
+Travel from floor 6 to floor 15 (drop off Person A): 9 floors.
+Travel from floor 15 to floor 17 (drop off Person D): 2 floors.
+Travel from floor 17 to floor 20 (drop off Person C): 3 floors.
+Travel from floor 20 to floor 12 (pick up Person B): 8 floors.
+Travel from floor 12 to floor 8 (drop off Person B): 4 floors.
+Total Distance Traveled: 3 + 2 + 1 + 9 + 2 + 3 + 8 + 4 = 32 floors.
+
+
+This method ensures the elevator is always traveling in one direction (up) until all passengers wanting to go up are picked up and dropped off. After that, the elevator picks up the passenger wanting to go down, and finally, drops them off. This minimizes backtracking and keeps the elevator traveling efficiently.
+
+Thus, the total travel distance remains 32 floors based on this sequence.
