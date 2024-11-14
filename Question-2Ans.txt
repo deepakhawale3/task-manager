@@ -58,3 +58,22 @@ Total Distance Traveled: 3 + 2 + 1 + 9 + 2 + 3 + 8 + 4 = 32 floors.
 This method ensures the elevator is always traveling in one direction (up) until all passengers wanting to go up are picked up and dropped off. After that, the elevator picks up the passenger wanting to go down, and finally, drops them off. This minimizes backtracking and keeps the elevator traveling efficiently.
 
 Thus, the total travel distance remains 32 floors based on this sequence.
+
+
+
+/////////////////////
+25 horses
+top 3 fast -
+condition
+1. there is no tool to mesure
+2. only 5 at a time can race 
+
+ pick 5 select top 3
+ pick 3+2 select top 3 (Till I get top 3)
+
+maximum 15 race- 
+first 5 (1),7(2),9(3),11(4),13(5),15(6),17(7),19(8),21(9),23(10),25(11).
+
+
+
+///////////////
