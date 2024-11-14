@@ -4,6 +4,20 @@ Person B is on floor 12 and wants to go to floor 8 (going down).
 Person C is on floor 6 and wants to go to floor 20 (going up).
 Person D is on floor 3 and wants to go to floor 17 (going up).
 
+
+/////
+D from 3 = 3 
+drop d on 17 = 14
+pick B from 12 = 5 
+drop b on 8 = 4
+pick c from 6 = 2  // pick a from 5 = 3 
+drop c on 20 = 14 // drop a to 15 = 10
+pick a on 5 = 15 // pick c from 6 = 9 
+drop a on 15= 10 // drop c to 20= 14
+
+total = 68  total = 62
+//////
+
 Approach (Corrected):
 
 First, we start at floor 1 and pick up passengers going up (the elevator is traveling upwards).
